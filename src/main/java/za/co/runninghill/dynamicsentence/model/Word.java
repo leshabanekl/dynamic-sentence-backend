@@ -21,6 +21,9 @@ public class Word implements Serializable {
 	
 	@Column(name = "value")
 	private String value;
+
+	@Column(name = "type")
+	private String type;
 	
 	public Word() {
 
@@ -40,5 +43,13 @@ public class Word implements Serializable {
 
 	public void setValue(String value) {
 		this.value = value;
+	}
+	
+	public String getType() {
+		return type;
+	}
+	
+	public void setType(String type) {
+		this.type = type;
 	}
 }

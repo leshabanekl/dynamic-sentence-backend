@@ -10,4 +10,6 @@ public interface WordService {
 	Word findById(Long id);
 	
 	List<Word> findAll();
+
+	List<Word> findByType(String type);
 }
